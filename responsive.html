@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profil Digital Responsive - [Nama Siswa]</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <main class="page-wrapper">
+    <!-- Kartu Profil Utama -->
+    <article class="profile-card">
+      <!-- Kolom Kiri / Header Profil -->
+      <header class="card-aside">
+        <button id="btnToggleTema" class="btn-tema">
+          ☀ Ganti Mode
+        </button>
+        <button id="btnBahasa" class="btn-tema">
+          Indonesia / English
+        </button>
+        <div class="avatar-box">
+          <span class="avatar-icon"> </span> 👨‍💻
+        </div>
+        <h1 class="student-name">yonatan lintang pamungkas</h1>
+        <p class="student-role">Junior Web Developer</p>
+        <p class="student-school">SMK brantas karangkates — RPL</p>
+        <a href="mailto:lintangrpl50@gmail.com" id="btnKontak" class="btn-contact">Kirim Pesan</a>
+      </header>
+      <!-- Kolom Kanan / Konten Detail -->
+      <section class="card-content">
+        <div class="bio-section">
+          <h2 class="section-heading" data-Indonesia="Tentang Saya" data-English="About Me">Tentang Saya</h2>
+          <p class="bio-text"
+          data-Indonesia="Siswa kelas 10 Rekayasa Perangkat Lunak yang berfokus mendalami arsitektur Front-End modern, tata letak CSS Flexbox, serta prinsip Mobile-First Responsive Design standar industri."
+          data-English="A 10th grade Software Engineering student focused on modern Front-End architecture, CSS Flexbox layouts, and industry-standard Mobile-First Responsive Design principles.">
+            Siswa kelas 10 Rekayasa Perangkat Lunak yang berfokus mendalami
+            arsitektur Front-End modern, tata letak CSS Flexbox, serta prinsip
+            Mobile-First Responsive Design standar industri.
+          </p>
+        </div>
+        <div class="skills-section">
+          <h2 class="section-heading" data-Indonesia="Keahlian & Kompetensi" data-English="Skilss & Competencies">Keahlian & Kompetensi</h2>
+          <div class="skill-matrix">
+            <div class="skill-badge">HTML5 Semantic</div>
+            <div class="skill-badge">CSS3 Flexbox</div>
+            <div class="skill-badge" dataIndoesia="Responsive Design" data-English="Responsive Design">Responsive Design</div>
+            <div class="skill-badge">Media Queries</div>
+            <div class="skill-badge">Chrome DevTools</div>
+            <div class="skill-badge" Data-Indonesia="Git & GitHub (Selanjutnya)" data-English="Git & GitHub (Next)">Git & GitHub (Next)</div>
+          </div>
+        </div>
+      </section>
+    </article>
+  </main>
+  <div id="modalKontak" class="modal-overlay">
+    <div class="modal-box">
+      <h2 data-Indonesia="Kirim Pesan" data-English="Send Message">Kirim Pesan</h2>
+      <p data-Indonesia="Silahkan hubungi saya melalui email: lintangrpl50@gmail.com"
+      data-English="Please contact me via email: lintangrpl50@gmail.com">Silahkan hubungi saya melalui email: lintangrpl50@gmail.com</p>
+      <button id="btnTutupModal" class="btn-tutup" data-Indonesia="Tutup" data-English="Close">Tutup</button>
+    </div>
+  </div>
+  <div id="modalkontak" class="modal-overlay">
+  </div>
+  <script src="interaktif.js"></script>
+</body>
+</html>
